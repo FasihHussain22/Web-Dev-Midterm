@@ -2,16 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ItemComponent } from './item/item.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { InsertFormComponent } from './insert-form/insert-form.component';
+import { ItemComponent } from './item/item.component';
+import { DisplayComponent } from './display/display.component';
+import { InsertItemComponent } from './insert-item/insert-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemComponent,
     NavbarComponent,
-    InsertFormComponent
+    ItemComponent,
+    DisplayComponent,
+    InsertItemComponent
   ],
   imports: [
     BrowserModule

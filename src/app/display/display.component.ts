@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ItemsService } from '../services/items.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-display',
+  templateUrl: './display.component.html',
+  styleUrls: ['./display.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class DisplayComponent implements OnInit {
 
   constructor(public itemsService: ItemsService) { }
 

@@ -1,1 +1,29 @@
-<p>item works!</p>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <span class="hover-cursor" [class.text-success]="detailsVisible" (click)="toggleDetails()">
+                <i class="fa fa-lg" [ngClass]="detailsVisible?'fa-check-circle-o fa-2x':'fa-circle-thin fa-2x'"></i>
+            </span> {{name}}
+            <span class="hover-cursor text-danger pull-right" (click)="deleteItem()" style="padding-right: 15px;">
+                <i class="fa fa-trash-o fa-lg fa-2x"></i>
+            </span>
+        </div>
+    </div>
+    <div class="row" *ngIf="detailsVisible">
+        <div class="col-xs-12 col-md-12">
+            {{details}}
+        </div>
+    </div>
+</div><br> -->
+<div class="border border-primary rounded" style="width: 600px;">
+    <h2>{{name}}</h2>
+    <p *ngIf="detailsVisible">{{details}}</p>
+    <button *ngIf="!detailsVisible" class="btn btn-primary" (click)="toggleDetails()">View Details</button>
+    <button *ngIf="detailsVisible" class="btn btn-primary" (click)="toggleDetails()">Hide Details</button>
+    <button class="btn btn-danger" (click)="deleteItem()">Delete</button>
+</div>
+<!-- <h2>{{name}}</h2>
+<p *ngIf="detailsVisible">{{details}}</p>
+<button *ngIf="!detailsVisible" class="btn btn-primary" (click)="toggleDetails()">View Details</button>
+<button *ngIf="detailsVisible" class="btn btn-primary" (click)="toggleDetails()">Hide Details</button>
+<button class="btn btn-danger" (click)="deleteItem()">Delete</button> -->
